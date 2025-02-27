@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: Adds a background color to the body */
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center elements horizontally */
+  flex-direction: column;
+  width: 300px; /* Set a fixed width */
+  padding: 20px; /* Add padding inside the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visual appearance */
+}
+
+.container > * {
+  margin: 10px 0; /* Adds vertical margin to every direct child inside .container */
+}
+
+.txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px; /* Optional: Adjust font size */
+}
+
+.btn  {
+  width: 100%;
+  padding: 10px; /* Add padding to the button */
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff; /* Optional: Add a background color */
+  color: white; /* Optional: Change text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   /* Smooth transition effect */
+}
+.btn_c  {
+  width: 100%;
+  padding: 10px; /* Add padding to the button */
+  border: none;
+  border-radius: 8px;
+  background-color: #33be04; /* Optional: Add a background color */
+  color: white; /* Optional: Change text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   /* Smooth transition effect */
+}
+
+
+.btn:hover {
+  background-color: #0056b3; /* Optional: Change color on hover */
+}
+.btn_c:hover{
+  background-color: #2da705; 
+  
+}
+
+.inpt_txt {
+  outline: none;
+  padding: 10px;
+  border: 2px solid rgb(245, 245, 245); /* Keep border size consistent */
+  border-radius: 8px;
+  width: 100%; /* Make input take full width of the container */
+  transition: border 0.3s ease; /* Smooth transition effect */
+  
+}
+
+.inpt_txt:focus {
+  border: 2px solid red; /* Only change color, not size */
+}
